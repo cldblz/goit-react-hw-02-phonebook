@@ -20,7 +20,8 @@ ContactList.propTypes = {
         name: PropTypes.string.isRequired,
         number: PropTypes.string.isRequired,
         id: PropTypes.string.isRequired,
-    })).isRequired
+    })).isRequired,
+    handleDelete: PropTypes.func.isRequired
 }
 
-export default ContactList ;
+export default ContactList;
