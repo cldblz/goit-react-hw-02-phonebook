@@ -6,9 +6,9 @@ function ContactList ({visibleContacts, handleDelete}) {
         <List>
             {visibleContacts.map(({id, number, name}) => {
                 return <Item key={id}>
-                    {name}: {number}
-                    <Button type="button" key={id} onClick={() => handleDelete(id)}>Delete</Button>
-                </Item>
+                            {name}: {number}
+                            <Button type="button" key={id} onClick={() => handleDelete(id)}>Delete</Button>
+                        </Item>
             }
             )}
         </List>
